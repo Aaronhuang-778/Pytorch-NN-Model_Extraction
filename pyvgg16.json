@@ -1,0 +1,1853 @@
+{
+  "irVersion": "6",
+  "producerName": "pytorch",
+  "producerVersion": "1.9",
+  "graph": {
+    "node": [
+      {
+        "input": [
+          "input",
+          "features.0.weight",
+          "features.0.bias"
+        ],
+        "output": [
+          "33"
+        ],
+        "name": "Conv_0",
+        "opType": "Conv",
+        "attribute": [
+          {
+            "name": "dilations",
+            "ints": [
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "group",
+            "i": "1",
+            "type": "INT"
+          },
+          {
+            "name": "kernel_shape",
+            "ints": [
+              "3",
+              "3"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "pads",
+            "ints": [
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "strides",
+            "ints": [
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          }
+        ]
+      },
+      {
+        "input": [
+          "33"
+        ],
+        "output": [
+          "34"
+        ],
+        "name": "Relu_1",
+        "opType": "Relu"
+      },
+      {
+        "input": [
+          "34",
+          "features.2.weight",
+          "features.2.bias"
+        ],
+        "output": [
+          "35"
+        ],
+        "name": "Conv_2",
+        "opType": "Conv",
+        "attribute": [
+          {
+            "name": "dilations",
+            "ints": [
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "group",
+            "i": "1",
+            "type": "INT"
+          },
+          {
+            "name": "kernel_shape",
+            "ints": [
+              "3",
+              "3"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "pads",
+            "ints": [
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "strides",
+            "ints": [
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          }
+        ]
+      },
+      {
+        "input": [
+          "35"
+        ],
+        "output": [
+          "36"
+        ],
+        "name": "Relu_3",
+        "opType": "Relu"
+      },
+      {
+        "input": [
+          "36"
+        ],
+        "output": [
+          "37"
+        ],
+        "name": "MaxPool_4",
+        "opType": "MaxPool",
+        "attribute": [
+          {
+            "name": "ceil_mode",
+            "i": "0",
+            "type": "INT"
+          },
+          {
+            "name": "kernel_shape",
+            "ints": [
+              "2",
+              "2"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "pads",
+            "ints": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "strides",
+            "ints": [
+              "2",
+              "2"
+            ],
+            "type": "INTS"
+          }
+        ]
+      },
+      {
+        "input": [
+          "37",
+          "features.5.weight",
+          "features.5.bias"
+        ],
+        "output": [
+          "38"
+        ],
+        "name": "Conv_5",
+        "opType": "Conv",
+        "attribute": [
+          {
+            "name": "dilations",
+            "ints": [
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "group",
+            "i": "1",
+            "type": "INT"
+          },
+          {
+            "name": "kernel_shape",
+            "ints": [
+              "3",
+              "3"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "pads",
+            "ints": [
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "strides",
+            "ints": [
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          }
+        ]
+      },
+      {
+        "input": [
+          "38"
+        ],
+        "output": [
+          "39"
+        ],
+        "name": "Relu_6",
+        "opType": "Relu"
+      },
+      {
+        "input": [
+          "39",
+          "features.7.weight",
+          "features.7.bias"
+        ],
+        "output": [
+          "40"
+        ],
+        "name": "Conv_7",
+        "opType": "Conv",
+        "attribute": [
+          {
+            "name": "dilations",
+            "ints": [
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "group",
+            "i": "1",
+            "type": "INT"
+          },
+          {
+            "name": "kernel_shape",
+            "ints": [
+              "3",
+              "3"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "pads",
+            "ints": [
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "strides",
+            "ints": [
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          }
+        ]
+      },
+      {
+        "input": [
+          "40"
+        ],
+        "output": [
+          "41"
+        ],
+        "name": "Relu_8",
+        "opType": "Relu"
+      },
+      {
+        "input": [
+          "41"
+        ],
+        "output": [
+          "42"
+        ],
+        "name": "MaxPool_9",
+        "opType": "MaxPool",
+        "attribute": [
+          {
+            "name": "ceil_mode",
+            "i": "0",
+            "type": "INT"
+          },
+          {
+            "name": "kernel_shape",
+            "ints": [
+              "2",
+              "2"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "pads",
+            "ints": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "strides",
+            "ints": [
+              "2",
+              "2"
+            ],
+            "type": "INTS"
+          }
+        ]
+      },
+      {
+        "input": [
+          "42",
+          "features.10.weight",
+          "features.10.bias"
+        ],
+        "output": [
+          "43"
+        ],
+        "name": "Conv_10",
+        "opType": "Conv",
+        "attribute": [
+          {
+            "name": "dilations",
+            "ints": [
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "group",
+            "i": "1",
+            "type": "INT"
+          },
+          {
+            "name": "kernel_shape",
+            "ints": [
+              "3",
+              "3"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "pads",
+            "ints": [
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "strides",
+            "ints": [
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          }
+        ]
+      },
+      {
+        "input": [
+          "43"
+        ],
+        "output": [
+          "44"
+        ],
+        "name": "Relu_11",
+        "opType": "Relu"
+      },
+      {
+        "input": [
+          "44",
+          "features.12.weight",
+          "features.12.bias"
+        ],
+        "output": [
+          "45"
+        ],
+        "name": "Conv_12",
+        "opType": "Conv",
+        "attribute": [
+          {
+            "name": "dilations",
+            "ints": [
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "group",
+            "i": "1",
+            "type": "INT"
+          },
+          {
+            "name": "kernel_shape",
+            "ints": [
+              "3",
+              "3"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "pads",
+            "ints": [
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "strides",
+            "ints": [
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          }
+        ]
+      },
+      {
+        "input": [
+          "45"
+        ],
+        "output": [
+          "46"
+        ],
+        "name": "Relu_13",
+        "opType": "Relu"
+      },
+      {
+        "input": [
+          "46",
+          "features.14.weight",
+          "features.14.bias"
+        ],
+        "output": [
+          "47"
+        ],
+        "name": "Conv_14",
+        "opType": "Conv",
+        "attribute": [
+          {
+            "name": "dilations",
+            "ints": [
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "group",
+            "i": "1",
+            "type": "INT"
+          },
+          {
+            "name": "kernel_shape",
+            "ints": [
+              "3",
+              "3"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "pads",
+            "ints": [
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "strides",
+            "ints": [
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          }
+        ]
+      },
+      {
+        "input": [
+          "47"
+        ],
+        "output": [
+          "48"
+        ],
+        "name": "Relu_15",
+        "opType": "Relu"
+      },
+      {
+        "input": [
+          "48"
+        ],
+        "output": [
+          "49"
+        ],
+        "name": "MaxPool_16",
+        "opType": "MaxPool",
+        "attribute": [
+          {
+            "name": "ceil_mode",
+            "i": "0",
+            "type": "INT"
+          },
+          {
+            "name": "kernel_shape",
+            "ints": [
+              "2",
+              "2"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "pads",
+            "ints": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "strides",
+            "ints": [
+              "2",
+              "2"
+            ],
+            "type": "INTS"
+          }
+        ]
+      },
+      {
+        "input": [
+          "49",
+          "features.17.weight",
+          "features.17.bias"
+        ],
+        "output": [
+          "50"
+        ],
+        "name": "Conv_17",
+        "opType": "Conv",
+        "attribute": [
+          {
+            "name": "dilations",
+            "ints": [
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "group",
+            "i": "1",
+            "type": "INT"
+          },
+          {
+            "name": "kernel_shape",
+            "ints": [
+              "3",
+              "3"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "pads",
+            "ints": [
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "strides",
+            "ints": [
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          }
+        ]
+      },
+      {
+        "input": [
+          "50"
+        ],
+        "output": [
+          "51"
+        ],
+        "name": "Relu_18",
+        "opType": "Relu"
+      },
+      {
+        "input": [
+          "51",
+          "features.19.weight",
+          "features.19.bias"
+        ],
+        "output": [
+          "52"
+        ],
+        "name": "Conv_19",
+        "opType": "Conv",
+        "attribute": [
+          {
+            "name": "dilations",
+            "ints": [
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "group",
+            "i": "1",
+            "type": "INT"
+          },
+          {
+            "name": "kernel_shape",
+            "ints": [
+              "3",
+              "3"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "pads",
+            "ints": [
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "strides",
+            "ints": [
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          }
+        ]
+      },
+      {
+        "input": [
+          "52"
+        ],
+        "output": [
+          "53"
+        ],
+        "name": "Relu_20",
+        "opType": "Relu"
+      },
+      {
+        "input": [
+          "53",
+          "features.21.weight",
+          "features.21.bias"
+        ],
+        "output": [
+          "54"
+        ],
+        "name": "Conv_21",
+        "opType": "Conv",
+        "attribute": [
+          {
+            "name": "dilations",
+            "ints": [
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "group",
+            "i": "1",
+            "type": "INT"
+          },
+          {
+            "name": "kernel_shape",
+            "ints": [
+              "3",
+              "3"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "pads",
+            "ints": [
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "strides",
+            "ints": [
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          }
+        ]
+      },
+      {
+        "input": [
+          "54"
+        ],
+        "output": [
+          "55"
+        ],
+        "name": "Relu_22",
+        "opType": "Relu"
+      },
+      {
+        "input": [
+          "55"
+        ],
+        "output": [
+          "56"
+        ],
+        "name": "MaxPool_23",
+        "opType": "MaxPool",
+        "attribute": [
+          {
+            "name": "ceil_mode",
+            "i": "0",
+            "type": "INT"
+          },
+          {
+            "name": "kernel_shape",
+            "ints": [
+              "2",
+              "2"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "pads",
+            "ints": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "strides",
+            "ints": [
+              "2",
+              "2"
+            ],
+            "type": "INTS"
+          }
+        ]
+      },
+      {
+        "input": [
+          "56",
+          "features.24.weight",
+          "features.24.bias"
+        ],
+        "output": [
+          "57"
+        ],
+        "name": "Conv_24",
+        "opType": "Conv",
+        "attribute": [
+          {
+            "name": "dilations",
+            "ints": [
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "group",
+            "i": "1",
+            "type": "INT"
+          },
+          {
+            "name": "kernel_shape",
+            "ints": [
+              "3",
+              "3"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "pads",
+            "ints": [
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "strides",
+            "ints": [
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          }
+        ]
+      },
+      {
+        "input": [
+          "57"
+        ],
+        "output": [
+          "58"
+        ],
+        "name": "Relu_25",
+        "opType": "Relu"
+      },
+      {
+        "input": [
+          "58",
+          "features.26.weight",
+          "features.26.bias"
+        ],
+        "output": [
+          "59"
+        ],
+        "name": "Conv_26",
+        "opType": "Conv",
+        "attribute": [
+          {
+            "name": "dilations",
+            "ints": [
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "group",
+            "i": "1",
+            "type": "INT"
+          },
+          {
+            "name": "kernel_shape",
+            "ints": [
+              "3",
+              "3"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "pads",
+            "ints": [
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "strides",
+            "ints": [
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          }
+        ]
+      },
+      {
+        "input": [
+          "59"
+        ],
+        "output": [
+          "60"
+        ],
+        "name": "Relu_27",
+        "opType": "Relu"
+      },
+      {
+        "input": [
+          "60",
+          "features.28.weight",
+          "features.28.bias"
+        ],
+        "output": [
+          "61"
+        ],
+        "name": "Conv_28",
+        "opType": "Conv",
+        "attribute": [
+          {
+            "name": "dilations",
+            "ints": [
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "group",
+            "i": "1",
+            "type": "INT"
+          },
+          {
+            "name": "kernel_shape",
+            "ints": [
+              "3",
+              "3"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "pads",
+            "ints": [
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "strides",
+            "ints": [
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          }
+        ]
+      },
+      {
+        "input": [
+          "61"
+        ],
+        "output": [
+          "62"
+        ],
+        "name": "Relu_29",
+        "opType": "Relu"
+      },
+      {
+        "input": [
+          "62"
+        ],
+        "output": [
+          "63"
+        ],
+        "name": "MaxPool_30",
+        "opType": "MaxPool",
+        "attribute": [
+          {
+            "name": "ceil_mode",
+            "i": "0",
+            "type": "INT"
+          },
+          {
+            "name": "kernel_shape",
+            "ints": [
+              "2",
+              "2"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "pads",
+            "ints": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "strides",
+            "ints": [
+              "2",
+              "2"
+            ],
+            "type": "INTS"
+          }
+        ]
+      },
+      {
+        "input": [
+          "63"
+        ],
+        "output": [
+          "64"
+        ],
+        "name": "AveragePool_31",
+        "opType": "AveragePool",
+        "attribute": [
+          {
+            "name": "kernel_shape",
+            "ints": [
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          },
+          {
+            "name": "strides",
+            "ints": [
+              "1",
+              "1"
+            ],
+            "type": "INTS"
+          }
+        ]
+      },
+      {
+        "input": [
+          "64"
+        ],
+        "output": [
+          "65"
+        ],
+        "name": "Flatten_32",
+        "opType": "Flatten",
+        "attribute": [
+          {
+            "name": "axis",
+            "i": "1",
+            "type": "INT"
+          }
+        ]
+      },
+      {
+        "input": [
+          "65",
+          "classifier.0.weight",
+          "classifier.0.bias"
+        ],
+        "output": [
+          "66"
+        ],
+        "name": "Gemm_33",
+        "opType": "Gemm",
+        "attribute": [
+          {
+            "name": "alpha",
+            "f": 1.0,
+            "type": "FLOAT"
+          },
+          {
+            "name": "beta",
+            "f": 1.0,
+            "type": "FLOAT"
+          },
+          {
+            "name": "transB",
+            "i": "1",
+            "type": "INT"
+          }
+        ]
+      },
+      {
+        "input": [
+          "66"
+        ],
+        "output": [
+          "67"
+        ],
+        "name": "Relu_34",
+        "opType": "Relu"
+      },
+      {
+        "input": [
+          "67",
+          "classifier.3.weight",
+          "classifier.3.bias"
+        ],
+        "output": [
+          "68"
+        ],
+        "name": "Gemm_35",
+        "opType": "Gemm",
+        "attribute": [
+          {
+            "name": "alpha",
+            "f": 1.0,
+            "type": "FLOAT"
+          },
+          {
+            "name": "beta",
+            "f": 1.0,
+            "type": "FLOAT"
+          },
+          {
+            "name": "transB",
+            "i": "1",
+            "type": "INT"
+          }
+        ]
+      },
+      {
+        "input": [
+          "68"
+        ],
+        "output": [
+          "69"
+        ],
+        "name": "Relu_36",
+        "opType": "Relu"
+      },
+      {
+        "input": [
+          "69",
+          "classifier.6.weight",
+          "classifier.6.bias"
+        ],
+        "output": [
+          "output"
+        ],
+        "name": "Gemm_37",
+        "opType": "Gemm",
+        "attribute": [
+          {
+            "name": "alpha",
+            "f": 1.0,
+            "type": "FLOAT"
+          },
+          {
+            "name": "beta",
+            "f": 1.0,
+            "type": "FLOAT"
+          },
+          {
+            "name": "transB",
+            "i": "1",
+            "type": "INT"
+          }
+        ]
+      }
+    ],
+    "name": "torch-jit-export",
+    "input": [
+      {
+        "name": "input",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimParam": "batch_size"
+                },
+                {
+                  "dimValue": "3"
+                },
+                {
+                  "dimValue": "224"
+                },
+                {
+                  "dimValue": "224"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "features.0.weight",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "64"
+                },
+                {
+                  "dimValue": "3"
+                },
+                {
+                  "dimValue": "3"
+                },
+                {
+                  "dimValue": "3"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "features.0.bias",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "64"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "features.2.weight",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "64"
+                },
+                {
+                  "dimValue": "64"
+                },
+                {
+                  "dimValue": "3"
+                },
+                {
+                  "dimValue": "3"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "features.2.bias",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "64"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "features.5.weight",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "128"
+                },
+                {
+                  "dimValue": "64"
+                },
+                {
+                  "dimValue": "3"
+                },
+                {
+                  "dimValue": "3"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "features.5.bias",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "128"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "features.7.weight",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "128"
+                },
+                {
+                  "dimValue": "128"
+                },
+                {
+                  "dimValue": "3"
+                },
+                {
+                  "dimValue": "3"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "features.7.bias",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "128"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "features.10.weight",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "256"
+                },
+                {
+                  "dimValue": "128"
+                },
+                {
+                  "dimValue": "3"
+                },
+                {
+                  "dimValue": "3"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "features.10.bias",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "256"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "features.12.weight",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "256"
+                },
+                {
+                  "dimValue": "256"
+                },
+                {
+                  "dimValue": "3"
+                },
+                {
+                  "dimValue": "3"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "features.12.bias",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "256"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "features.14.weight",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "256"
+                },
+                {
+                  "dimValue": "256"
+                },
+                {
+                  "dimValue": "3"
+                },
+                {
+                  "dimValue": "3"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "features.14.bias",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "256"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "features.17.weight",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "512"
+                },
+                {
+                  "dimValue": "256"
+                },
+                {
+                  "dimValue": "3"
+                },
+                {
+                  "dimValue": "3"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "features.17.bias",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "512"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "features.19.weight",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "512"
+                },
+                {
+                  "dimValue": "512"
+                },
+                {
+                  "dimValue": "3"
+                },
+                {
+                  "dimValue": "3"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "features.19.bias",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "512"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "features.21.weight",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "512"
+                },
+                {
+                  "dimValue": "512"
+                },
+                {
+                  "dimValue": "3"
+                },
+                {
+                  "dimValue": "3"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "features.21.bias",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "512"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "features.24.weight",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "512"
+                },
+                {
+                  "dimValue": "512"
+                },
+                {
+                  "dimValue": "3"
+                },
+                {
+                  "dimValue": "3"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "features.24.bias",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "512"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "features.26.weight",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "512"
+                },
+                {
+                  "dimValue": "512"
+                },
+                {
+                  "dimValue": "3"
+                },
+                {
+                  "dimValue": "3"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "features.26.bias",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "512"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "features.28.weight",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "512"
+                },
+                {
+                  "dimValue": "512"
+                },
+                {
+                  "dimValue": "3"
+                },
+                {
+                  "dimValue": "3"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "features.28.bias",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "512"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "classifier.0.weight",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "4096"
+                },
+                {
+                  "dimValue": "25088"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "classifier.0.bias",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "4096"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "classifier.3.weight",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "4096"
+                },
+                {
+                  "dimValue": "4096"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "classifier.3.bias",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "4096"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "classifier.6.weight",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "1000"
+                },
+                {
+                  "dimValue": "4096"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "classifier.6.bias",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimValue": "1000"
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "output": [
+      {
+        "name": "output",
+        "type": {
+          "tensorType": {
+            "elemType": 1,
+            "shape": {
+              "dim": [
+                {
+                  "dimParam": "batch_size"
+                },
+                {
+                  "dimValue": "1000"
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "opsetImport": [
+    {
+      "version": "10"
+    }
+  ]
+}
